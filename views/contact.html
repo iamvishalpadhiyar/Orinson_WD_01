@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/3482424e3c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="responseMessage" class="response-message"></div>
+    <div class="container">
+        <div class="left">
+            <h3 class="title">Get in Touch</h3>
+            <div class="icon ml-10">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Nana Varachha, Varachha Road, Surat, Gujrat,<br> Pincode : 395006</span>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-envelope"></i>
+                <span>21bca049@sxca.edu.in</span>
+            </div>
+            <div class="icon">
+                <i class="fa-solid fa-phone-volume"></i>
+                <span>+91 9313713825</span>
+            </div>
+            <p class="icon-text">Reach Me:</p>
+            <div class="icons">
+                <a href="#" aria-label="Facebook"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fa-brands fa-square-github"></i></a>
+            </div>
+        </div>
+        <div class="right">
+            <div class="form">
+                <h2>Contact Me</h2>
+                <form method="post" id="contact-form" action="/submit" onclick="">
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <label for="name">Full Name</label>
+                            <input type="text" class="item" id="name" name="name" placeholder="Full Name" required>
+                        </div>
+                        <div class="input-field field">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="item" id="email" name="email" placeholder="Email Address" required>
+                        </div>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-field field">
+                            <label for="phone">Mobile Number</label>
+                            <input type="tel" class="item" id="phone" name="phone" placeholder="Mobile Number" required>
+                        </div>
+                        <div class="input-field field">
+                            <label for="req">Service Required</label>
+                            <select id="req" name="service" class="select-item" autocomplete="off" required>
+                                <option value="" disabled selected>Select</option>
+                                <option value="web-development">Website Development</option>
+                                <option value="mobile-app">Mobile App Development</option>
+                                <option value="ui-ux">UI/UX Design</option>
+                                <option value="seo-marketing">SEO & Digital Marketing</option>
+                                <option value="ecommerce">E-commerce Solutions</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="text-area">
+                        <label for="msg">Message</label>
+                        <textarea id="msg" name="message" cols="50" rows="4" placeholder="How can I help you?" class="item" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
